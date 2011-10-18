@@ -46,7 +46,7 @@ class AppDelegate
     tableView.reloadData
   end
 
-  def speak(sender)
+  def say(sender)
     index = tableView.selectedRow
     return unless tableView.isRowSelected(index)
 
