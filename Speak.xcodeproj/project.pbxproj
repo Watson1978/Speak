@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9CC9AF3144D16F2006BA890 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CC9AF2144D16F2006BA890 /* Cocoa.framework */; };
+		A9CC9AF5144D16F2006BA890 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CC9AF4144D16F2006BA890 /* MacRuby.framework */; };
+		A9CC9AFE144D16F2006BA890 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9CC9AFC144D16F2006BA890 /* InfoPlist.strings */; };
+		A9CC9B00144D16F2006BA890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CC9AFF144D16F2006BA890 /* main.m */; };
+		A9CC9B05144D16F3006BA890 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CC9B03144D16F3006BA890 /* MainMenu.xib */; };
+		A9CC9B08144D16F3006BA890 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = A9CC9B07144D16F3006BA890 /* rb_main.rb */; };
+		A9CC9B0A144D16F3006BA890 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = A9CC9B09144D16F3006BA890 /* AppDelegate.rb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9CC9AF7144D16F2006BA890 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9CC9AE5144D16F2006BA890 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9CC9AED144D16F2006BA890;
+			remoteInfo = Speak;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A9CC9AEE144D16F2006BA890 /* Speak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Speak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9CC9AF2144D16F2006BA890 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A9CC9AF4144D16F2006BA890 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
+		A9CC9AFB144D16F2006BA890 /* Speak-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Speak-Info.plist"; sourceTree = "<group>"; };
+		A9CC9AFD144D16F2006BA890 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A9CC9AFF144D16F2006BA890 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9CC9B01144D16F2006BA890 /* Speak-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Speak-Prefix.pch"; sourceTree = "<group>"; };
+		A9CC9B04144D16F3006BA890 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A9CC9B07144D16F3006BA890 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		A9CC9B09144D16F3006BA890 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9CC9AEB144D16F2006BA890 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CC9AF3144D16F2006BA890 /* Cocoa.framework in Frameworks */,
+				A9CC9AF5144D16F2006BA890 /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9CC9AE3144D16F2006BA890 = {
+			isa = PBXGroup;
+			children = (
+				A9CC9AF9144D16F2006BA890 /* Speak */,
+				A9CC9AF1144D16F2006BA890 /* Frameworks */,
+				A9CC9AEF144D16F2006BA890 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9CC9AEF144D16F2006BA890 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9CC9AEE144D16F2006BA890 /* Speak.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9CC9AF1144D16F2006BA890 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9CC9AF2144D16F2006BA890 /* Cocoa.framework */,
+				A9CC9AF4144D16F2006BA890 /* MacRuby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9CC9AF9144D16F2006BA890 /* Speak */ = {
+			isa = PBXGroup;
+			children = (
+				A9CC9B09144D16F3006BA890 /* AppDelegate.rb */,
+				A9CC9B02144D16F3006BA890 /* Resources */,
+				A9CC9B06144D16F3006BA890 /* Other Sources */,
+				A9CC9AFA144D16F2006BA890 /* Supporting Files */,
+			);
+			path = Speak;
+			sourceTree = "<group>";
+		};
+		A9CC9AFA144D16F2006BA890 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9CC9AFB144D16F2006BA890 /* Speak-Info.plist */,
+				A9CC9AFC144D16F2006BA890 /* InfoPlist.strings */,
+				A9CC9AFF144D16F2006BA890 /* main.m */,
+				A9CC9B01144D16F2006BA890 /* Speak-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9CC9B02144D16F3006BA890 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A9CC9B03144D16F3006BA890 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A9CC9B06144D16F3006BA890 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A9CC9B07144D16F3006BA890 /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		A9CC9AF6144D16F2006BA890 /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = A9CC9B10144D16F3006BA890 /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+				A9CC9AF8144D16F2006BA890 /* PBXTargetDependency */,
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		A9CC9AED144D16F2006BA890 /* Speak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9CC9B0D144D16F3006BA890 /* Build configuration list for PBXNativeTarget "Speak" */;
+			buildPhases = (
+				A9CC9AEA144D16F2006BA890 /* Sources */,
+				A9CC9AEB144D16F2006BA890 /* Frameworks */,
+				A9CC9AEC144D16F2006BA890 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Speak;
+			productName = Speak;
+			productReference = A9CC9AEE144D16F2006BA890 /* Speak.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9CC9AE5144D16F2006BA890 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = A9CC9AE8144D16F2006BA890 /* Build configuration list for PBXProject "Speak" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A9CC9AE3144D16F2006BA890;
+			productRefGroup = A9CC9AEF144D16F2006BA890 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9CC9AED144D16F2006BA890 /* Speak */,
+				A9CC9AF6144D16F2006BA890 /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9CC9AEC144D16F2006BA890 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CC9AFE144D16F2006BA890 /* InfoPlist.strings in Resources */,
+				A9CC9B05144D16F3006BA890 /* MainMenu.xib in Resources */,
+				A9CC9B08144D16F3006BA890 /* rb_main.rb in Resources */,
+				A9CC9B0A144D16F3006BA890 /* AppDelegate.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9CC9AEA144D16F2006BA890 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CC9B00144D16F2006BA890 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9CC9AF8144D16F2006BA890 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9CC9AED144D16F2006BA890 /* Speak */;
+			targetProxy = A9CC9AF7144D16F2006BA890 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9CC9AFC144D16F2006BA890 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9CC9AFD144D16F2006BA890 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A9CC9B03144D16F3006BA890 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9CC9B04144D16F3006BA890 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9CC9B0B144D16F3006BA890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "";
+			};
+			name = Debug;
+		};
+		A9CC9B0C144D16F3006BA890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				SDKROOT = "";
+			};
+			name = Release;
+		};
+		A9CC9B0E144D16F3006BA890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Speak/Speak-Prefix.pch";
+				INFOPLIST_FILE = "Speak/Speak-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A9CC9B0F144D16F3006BA890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Speak/Speak-Prefix.pch";
+				INFOPLIST_FILE = "Speak/Speak-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A9CC9B11144D16F3006BA890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		A9CC9B12144D16F3006BA890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9CC9AE8144D16F2006BA890 /* Build configuration list for PBXProject "Speak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9CC9B0B144D16F3006BA890 /* Debug */,
+				A9CC9B0C144D16F3006BA890 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9CC9B0D144D16F3006BA890 /* Build configuration list for PBXNativeTarget "Speak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9CC9B0E144D16F3006BA890 /* Debug */,
+				A9CC9B0F144D16F3006BA890 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A9CC9B10144D16F3006BA890 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9CC9B11144D16F3006BA890 /* Debug */,
+				A9CC9B12144D16F3006BA890 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9CC9AE5144D16F2006BA890 /* Project object */;
+}
