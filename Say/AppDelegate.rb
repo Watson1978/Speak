@@ -84,6 +84,8 @@ class AppDelegate
         f.puts item
       end
     }
+    
+    true
   end
 
 end
