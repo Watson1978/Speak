@@ -4,7 +4,7 @@
 #
 
 require 'fileutils'
-DATA_PATH = "~/Library/Application Support/Speak/speak.txt"
+DATA_PATH = "~/Library/Application Support/Say/say.txt"
 
 class AppDelegate
   attr_accessor :window

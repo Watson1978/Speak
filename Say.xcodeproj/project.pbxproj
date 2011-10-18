@@ -22,18 +22,18 @@
 			containerPortal = A9CC9AE5144D16F2006BA890 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A9CC9AED144D16F2006BA890;
-			remoteInfo = Speak;
+			remoteInfo = Say;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A9CC9AEE144D16F2006BA890 /* Speak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Speak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9CC9AEE144D16F2006BA890 /* Say.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Say.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CC9AF2144D16F2006BA890 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A9CC9AF4144D16F2006BA890 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
-		A9CC9AFB144D16F2006BA890 /* Speak-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Speak-Info.plist"; sourceTree = "<group>"; };
+		A9CC9AFB144D16F2006BA890 /* Say-Info.plist */ = {isa = PBXFileReference; path = "Say-Info.plist"; sourceTree = "<group>"; };
 		A9CC9AFD144D16F2006BA890 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A9CC9AFF144D16F2006BA890 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A9CC9B01144D16F2006BA890 /* Speak-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Speak-Prefix.pch"; sourceTree = "<group>"; };
+		A9CC9B01144D16F2006BA890 /* Say-Prefix.pch */ = {isa = PBXFileReference; path = "Say-Prefix.pch"; sourceTree = "<group>"; };
 		A9CC9B04144D16F3006BA890 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		A9CC9B07144D16F3006BA890 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		A9CC9B09144D16F3006BA890 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		A9CC9AE3144D16F2006BA890 = {
 			isa = PBXGroup;
 			children = (
-				A9CC9AF9144D16F2006BA890 /* Speak */,
+				A9CC9AF9144D16F2006BA890 /* Say */,
 				A9CC9AF1144D16F2006BA890 /* Frameworks */,
 				A9CC9AEF144D16F2006BA890 /* Products */,
 			);
@@ -64,7 +64,7 @@
 		A9CC9AEF144D16F2006BA890 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A9CC9AEE144D16F2006BA890 /* Speak.app */,
+				A9CC9AEE144D16F2006BA890 /* Say.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,7 +78,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A9CC9AF9144D16F2006BA890 /* Speak */ = {
+		A9CC9AF9144D16F2006BA890 /* Say */ = {
 			isa = PBXGroup;
 			children = (
 				A9CC9B09144D16F3006BA890 /* AppDelegate.rb */,
@@ -86,16 +86,16 @@
 				A9CC9B06144D16F3006BA890 /* Other Sources */,
 				A9CC9AFA144D16F2006BA890 /* Supporting Files */,
 			);
-			path = Speak;
+			path = Say;
 			sourceTree = "<group>";
 		};
 		A9CC9AFA144D16F2006BA890 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A9CC9AFB144D16F2006BA890 /* Speak-Info.plist */,
+				A9CC9AFB144D16F2006BA890 /* Say-Info.plist */,
 				A9CC9AFC144D16F2006BA890 /* InfoPlist.strings */,
 				A9CC9AFF144D16F2006BA890 /* main.m */,
-				A9CC9B01144D16F2006BA890 /* Speak-Prefix.pch */,
+				A9CC9B01144D16F2006BA890 /* Say-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -136,9 +136,9 @@
 /* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
-		A9CC9AED144D16F2006BA890 /* Speak */ = {
+		A9CC9AED144D16F2006BA890 /* Say */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9CC9B0D144D16F3006BA890 /* Build configuration list for PBXNativeTarget "Speak" */;
+			buildConfigurationList = A9CC9B0D144D16F3006BA890 /* Build configuration list for PBXNativeTarget "Say" */;
 			buildPhases = (
 				A9CC9AEA144D16F2006BA890 /* Sources */,
 				A9CC9AEB144D16F2006BA890 /* Frameworks */,
@@ -148,9 +148,9 @@
 			);
 			dependencies = (
 			);
-			name = Speak;
-			productName = Speak;
-			productReference = A9CC9AEE144D16F2006BA890 /* Speak.app */;
+			name = Say;
+			productName = Say;
+			productReference = A9CC9AEE144D16F2006BA890 /* Say.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -161,7 +161,7 @@
 			attributes = {
 				LastUpgradeCheck = 0420;
 			};
-			buildConfigurationList = A9CC9AE8144D16F2006BA890 /* Build configuration list for PBXProject "Speak" */;
+			buildConfigurationList = A9CC9AE8144D16F2006BA890 /* Build configuration list for PBXProject "Say" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -173,7 +173,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A9CC9AED144D16F2006BA890 /* Speak */,
+				A9CC9AED144D16F2006BA890 /* Say */,
 				A9CC9AF6144D16F2006BA890 /* Deployment */,
 			);
 		};
@@ -207,7 +207,7 @@
 /* Begin PBXTargetDependency section */
 		A9CC9AF8144D16F2006BA890 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A9CC9AED144D16F2006BA890 /* Speak */;
+			target = A9CC9AED144D16F2006BA890 /* Say */;
 			targetProxy = A9CC9AF7144D16F2006BA890 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -287,9 +287,9 @@
 				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Speak/Speak-Prefix.pch";
-				INFOPLIST_FILE = "Speak/Speak-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Say/Say-Prefix.pch";
+				INFOPLIST_FILE = "Say/Say-Info.plist";
+				PRODUCT_NAME = Say;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -304,9 +304,9 @@
 				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Speak/Speak-Prefix.pch";
-				INFOPLIST_FILE = "Speak/Speak-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Say/Say-Prefix.pch";
+				INFOPLIST_FILE = "Say/Say-Info.plist";
+				PRODUCT_NAME = Say;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -326,7 +326,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A9CC9AE8144D16F2006BA890 /* Build configuration list for PBXProject "Speak" */ = {
+		A9CC9AE8144D16F2006BA890 /* Build configuration list for PBXProject "Say" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9CC9B0B144D16F3006BA890 /* Debug */,
@@ -335,13 +335,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9CC9B0D144D16F3006BA890 /* Build configuration list for PBXNativeTarget "Speak" */ = {
+		A9CC9B0D144D16F3006BA890 /* Build configuration list for PBXNativeTarget "Say" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9CC9B0E144D16F3006BA890 /* Debug */,
 				A9CC9B0F144D16F3006BA890 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9CC9B10144D16F3006BA890 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
 			isa = XCConfigurationList;
@@ -350,6 +351,7 @@
 				A9CC9B12144D16F3006BA890 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
