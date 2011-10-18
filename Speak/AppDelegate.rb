@@ -44,7 +44,7 @@ class AppDelegate
     v   = "-v #{voice.itemObjectValueAtIndex(index)}" if index >= 0
     v ||= ""
 
-    system "say #{v} '#{string}'"
+    system "say #{v} \"#{string}\""
   end
 
   #----------------------------------------
