@@ -3,6 +3,9 @@
 #  Speak
 #
 
+require 'fileutils'
+DATA_PATH = "~/Library/Application Support/Speak/speak.txt"
+
 class AppDelegate
   attr_accessor :window
   attr_accessor :textField
@@ -13,6 +16,15 @@ class AppDelegate
   def applicationDidFinishLaunching(a_notification)
     # Insert code here to initialize your application
     @words = []
+    path = File.expand_path(DATA_PATH)
+    if File.exist?(path)
+      File.open(path) {|f|
+        f.each_line do |item|
+          @words << item
+        end
+      }
+      tableView.reloadData
+    end
   end
 
   #----------------------------------------
@@ -58,6 +70,20 @@ class AppDelegate
                 objectValueForTableColumn:aTableColumn,
                 row:rowIndex)
     @words[rowIndex]
+  end
+  
+  #----------------------------------------
+  # delegator
+  def applicationShouldTerminate(sender)
+    path = File.expand_path(DATA_PATH)
+    dir = File.dirname(path)
+    FileUtils.mkdir_p(dir) unless Dir.exist?(dir)
+    
+    File.open(path, "w") {|f|
+      @words.each do |item|
+        f.puts item
+      end
+    }
   end
 
 end
