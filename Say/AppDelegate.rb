@@ -9,7 +9,6 @@ DATA_PATH = "~/Library/Application Support/Say/say.txt"
 class AppDelegate
   attr_accessor :window
   attr_accessor :textField
-  attr_accessor :add, :speak
   attr_accessor :tableView
   attr_accessor :voice
 
