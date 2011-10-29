@@ -10,7 +10,7 @@ class AppDelegate
   attr_accessor :window
   attr_accessor :textField
   attr_accessor :tableView
-  attr_accessor :voice
+  attr_accessor :comboBox
 
   def applicationDidFinishLaunching(a_notification)
     # Insert code here to initialize your application
@@ -51,8 +51,8 @@ class AppDelegate
 
     string = @words[index]
 
-    index = voice.indexOfSelectedItem
-    v   = "-v #{voice.itemObjectValueAtIndex(index)}" if index >= 0
+    index = comboBox.indexOfSelectedItem
+    v   = "-v #{comboBox.itemObjectValueAtIndex(index)}" if index >= 0
     v ||= ""
 
     system "say #{v} \"#{string}\""
