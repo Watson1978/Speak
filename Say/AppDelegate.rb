@@ -49,7 +49,6 @@ class AppDelegate
   def say(sender)
     index = tableView.selectedRow
 
-    
     if index >= 0
       string = @words[index]
 
