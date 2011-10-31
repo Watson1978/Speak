@@ -8,9 +8,9 @@ DATA_PATH = "~/Library/Application Support/Say/say.txt"
 
 class AppDelegate
   attr_accessor :window
-  attr_accessor :textField
-  attr_accessor :tableView
-  attr_accessor :comboBox
+  attr_accessor :textField # Text Field のアウトレット
+  attr_accessor :tableView # Table View のアウトレット
+  attr_accessor :comboBox  # Combo Box のアウトレット
 
   def applicationDidFinishLaunching(a_notification)
     # Insert code here to initialize your application
@@ -39,23 +39,26 @@ class AppDelegate
 
   def delete(sender)
     index = tableView.selectedRow
-    return unless tableView.isRowSelected(index)
 
-    @words.delete_at(index)
-    tableView.reloadData
+    if index >= 0
+      @words.delete_at(index)
+      tableView.reloadData
+    end
   end
 
   def say(sender)
     index = tableView.selectedRow
-    return unless tableView.isRowSelected(index)
 
-    string = @words[index]
+    
+    if index >= 0
+      string = @words[index]
 
-    index = comboBox.indexOfSelectedItem
-    v   = "-v #{comboBox.itemObjectValueAtIndex(index)}" if index >= 0
-    v ||= ""
+      index = comboBox.indexOfSelectedItem
+      v   = "-v #{comboBox.itemObjectValueAtIndex(index)}" if index >= 0
+      v ||= ""
 
-    system "say #{v} \"#{string}\""
+      system "say #{v} \"#{string}\""
+    end
   end
 
   #----------------------------------------
