@@ -18,7 +18,7 @@ class AppDelegate
     path = File.expand_path(DATA_PATH)
     if File.exist?(path)
       File.open(path) {|f|
-        f.each_line do |item|
+        f.each do |item|
           @words << item
         end
       }
@@ -76,7 +76,7 @@ class AppDelegate
                 row:rowIndex)
     return @words[rowIndex]
   end
-  
+
   #----------------------------------------
   def applicationShouldTerminate(sender)
     path = File.expand_path(DATA_PATH)
@@ -84,13 +84,13 @@ class AppDelegate
     if !Dir.exist?(dir)
       FileUtils.mkdir_p(dir)
     end
-    
+
     File.open(path, "w") {|f|
       @words.each do |item|
         f.puts item
       end
     }
-    
+
     return true
   end
 
