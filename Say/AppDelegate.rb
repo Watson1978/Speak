@@ -8,9 +8,9 @@ DATA_PATH = "~/Library/Application Support/Say/say.txt"
 
 class AppDelegate
   attr_accessor :window
-  attr_accessor :textField # Text Field のアウトレット
-  attr_accessor :tableView # Table View のアウトレット
-  attr_accessor :comboBox  # Combo Box のアウトレット
+  attr_accessor :textField # outlet: Text Field
+  attr_accessor :tableView # outlet: Table View
+  attr_accessor :comboBox  # outlet: Combo Box
 
   def applicationDidFinishLaunching(a_notification)
     # Insert code here to initialize your application
@@ -22,63 +22,68 @@ class AppDelegate
           @words << item
         end
       }
-      tableView.reloadData
+      tableView.reloadData()
     end
   end
 
   #----------------------------------------
-  # action methods
   def add(sender)
-    if textField.stringValue.length > 0
-      @words << textField.stringValue
-      textField.stringValue = ""
+    text = textField.stringValue()
+    if text.length > 0
+      @words << text
+      textField.setStringValue("")
 
-      tableView.reloadData
+      tableView.reloadData()
     end
   end
 
   def delete(sender)
-    index = tableView.selectedRow
+    index = tableView.selectedRow()
 
     if index >= 0
       @words.delete_at(index)
-      tableView.reloadData
+      tableView.reloadData()
     end
   end
 
   def say(sender)
-    index = tableView.selectedRow
+    index = tableView.selectedRow()
 
     if index >= 0
       string = @words[index]
 
-      index = comboBox.indexOfSelectedItem
-      v   = "-v #{comboBox.itemObjectValueAtIndex(index)}" if index >= 0
-      v ||= ""
+      index = comboBox.indexOfSelectedItem()
+      v = ""
+      if index >= 0
+        v = "-v #{comboBox.itemObjectValueAtIndex(index)}"
+      end
 
       system "say #{v} \"#{string}\""
     end
   end
 
   #----------------------------------------
-  # dataSource of tableView
   def numberOfRowsInTableView(aTableView)
-    return 0 if @words.nil?
-    @words.size
+    if @words.nil?
+      return 0
+    end
+
+    return @words.size
   end
 
   def tableView(aTableView,
                 objectValueForTableColumn:aTableColumn,
                 row:rowIndex)
-    @words[rowIndex]
+    return @words[rowIndex]
   end
   
   #----------------------------------------
-  # delegator
   def applicationShouldTerminate(sender)
     path = File.expand_path(DATA_PATH)
     dir = File.dirname(path)
-    FileUtils.mkdir_p(dir) unless Dir.exist?(dir)
+    if !Dir.exist?(dir)
+      FileUtils.mkdir_p(dir)
+    end
     
     File.open(path, "w") {|f|
       @words.each do |item|
@@ -86,8 +91,7 @@ class AppDelegate
       end
     }
     
-    true
+    return true
   end
 
 end
-
