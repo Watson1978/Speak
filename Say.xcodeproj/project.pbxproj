@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A92445E4146621010067FBB2 /* say.icns in Resources */ = {isa = PBXBuildFile; fileRef = A92445E3146621010067FBB2 /* say.icns */; };
 		A9CC9AF3144D16F2006BA890 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CC9AF2144D16F2006BA890 /* Cocoa.framework */; };
 		A9CC9AF5144D16F2006BA890 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CC9AF4144D16F2006BA890 /* MacRuby.framework */; };
 		A9CC9AFE144D16F2006BA890 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9CC9AFC144D16F2006BA890 /* InfoPlist.strings */; };
@@ -27,13 +28,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A92445E3146621010067FBB2 /* say.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = say.icns; sourceTree = "<group>"; };
 		A9CC9AEE144D16F2006BA890 /* Say.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Say.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CC9AF2144D16F2006BA890 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A9CC9AF4144D16F2006BA890 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
-		A9CC9AFB144D16F2006BA890 /* Say-Info.plist */ = {isa = PBXFileReference; path = "Say-Info.plist"; sourceTree = "<group>"; };
+		A9CC9AFB144D16F2006BA890 /* Say-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Say-Info.plist"; sourceTree = "<group>"; };
 		A9CC9AFD144D16F2006BA890 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A9CC9AFF144D16F2006BA890 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A9CC9B01144D16F2006BA890 /* Say-Prefix.pch */ = {isa = PBXFileReference; path = "Say-Prefix.pch"; sourceTree = "<group>"; };
+		A9CC9B01144D16F2006BA890 /* Say-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Say-Prefix.pch"; sourceTree = "<group>"; };
 		A9CC9B04144D16F3006BA890 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		A9CC9B07144D16F3006BA890 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		A9CC9B09144D16F3006BA890 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 		A9CC9AE3144D16F2006BA890 = {
 			isa = PBXGroup;
 			children = (
+				A92445E3146621010067FBB2 /* say.icns */,
 				A9CC9AF9144D16F2006BA890 /* Say */,
 				A9CC9AF1144D16F2006BA890 /* Frameworks */,
 				A9CC9AEF144D16F2006BA890 /* Products */,
@@ -188,6 +191,7 @@
 				A9CC9B05144D16F3006BA890 /* MainMenu.xib in Resources */,
 				A9CC9B08144D16F3006BA890 /* rb_main.rb in Resources */,
 				A9CC9B0A144D16F3006BA890 /* AppDelegate.rb in Resources */,
+				A92445E4146621010067FBB2 /* say.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
